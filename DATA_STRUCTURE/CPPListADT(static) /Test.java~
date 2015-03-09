@@ -1,0 +1,29 @@
+/*
+ * File: TestList.java
+ * ------------------
+ * This program will test the MyList class that implements
+ * List ADT
+ */
+
+import acm.graphics.*;
+import acm.program.*;
+import acm.util.*;
+
+import java.awt.*;
+
+public class TestList extends ConsoleProgram {
+
+    private ListCanvas canvas;
+    private MyList<String> food;
+
+    public void init() {
+	     canvas = new ListCanvas();
+             add(canvas); 
+             canvas.reset();
+		}
+
+    public void run() {
+	     println("(food.createList()).size() = " + (food.createList()).size());             
+	}
+
+}

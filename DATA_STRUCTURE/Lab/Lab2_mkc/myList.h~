@@ -1,0 +1,80 @@
+// List Header
+#ifndef H_List
+#define H_List
+
+#include <stdbool.h>
+
+#define MAX_ITEMS 10
+
+typedef struct { 
+  char y[MAX_ITEMS]; // blank spaces
+} Type;
+
+typedef struct {
+   int size;
+   Type items[MAX_ITEMS];
+} orderedList;
+
+void createorderedList(orderedList *OL)
+{
+	for (int i = 0; i < MAX_ITEMS; i++)
+	     strcpy(OL->items[i].y, "-");
+	OL-> size = 0; // empty list
+	return;
+}
+
+int length(orderedList *OL)
+{
+	return OL-> size;
+}
+
+void insert(orderedList *OL, int Position, Type NewItem)
+{
+	int i;	
+	if(Position > MAX_ITEMS){
+		printf("\nThe position of the Item is over the list limit.\n");		
+	}
+        else if(OL-> size > MAX_ITEMS){
+               printf("\nThe list is full.\n");
+        }
+	else
+	{
+		for(i=MAX_ITEMS-1;i > Position-1; i--)
+			strcpy(OL->items[i].y, OL->items[i-1].y);
+		strcpy(OL->items[Position-1].y, NewItem.y); // insert item
+		OL->size++;
+	}
+	return;
+}
+
+void listDelete(orderedList *OL, int Position)
+{
+	if(Position > MAX_ITEMS)
+		printf("\nCannot delete! Position is over the list limit");
+	else
+	{
+		for(int i = Position-1; i < MAX_ITEMS-1; i++)
+		    strcpy(OL->items[i].y, OL->items[i+1].y);
+		strcpy(OL->items[MAX_ITEMS-1].y, "-");
+		OL->size--;
+	}
+	return;
+}
+
+void display(orderedList *OL)
+{
+	if (OL->size == 0)
+		printf("\n\nList Empty!\n");
+	else if (OL->size < 0)
+		printf("\n\nCreate an empty ordered list first!\n");
+	else
+	{
+	printf("\n");
+		for(int i = 0; i < MAX_ITEMS; i++)
+		     printf("%s ", OL->items[i].y);
+		printf("\n");
+	}
+	return;
+}
+
+#endif	
