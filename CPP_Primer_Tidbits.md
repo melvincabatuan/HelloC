@@ -8,7 +8,7 @@ The fundamental ideas behind classes are *data abstraction* and *encapsulation*.
 
 ## Data abstraction
 
-- a programming (and design) technique that relies on the separation of interface and implementation. The interface of a class consists of the operations that users of the class can execute. The implementation includes the class' data members, the bodies of the functions that constitute the interface, and any functions needed to define the class that are not intended for general use.
+- a programming (and design) technique that relies on the separation of *interface* and *implementation*. The interface of a class consists of the operations that users of the class can execute. The implementation includes the class' data members, the bodies of the functions that constitute the interface, and any functions needed to define the class that are not intended for general use.
 
 ## Encapsulation
 
@@ -28,3 +28,26 @@ The fundamental ideas behind classes are *data abstraction* and *encapsulation*.
 ### "Functions defined in the class are implicitly ```inline```"
 
 ### "Objects that are ```const```, and references or pointers to ```const``` objects, may call only ```const``` member functions."
+
+
+## Class Scope and Member Functions
+
+- The definitions of the member functions of a class are nested inside the scope of the class itself. The compiler processes classes in two steps - the member declarations are compiled first, after which the member function bodies, if any, are processed. Thus, member function bodies may use other members of their class regardless of where in the class those members appear.
+
+## Defining a Member Function outside the Class
+
+- As with any other function, when we define a member function outside the class body, the member’s definition must match its declaration. That is, the return type, parameter list, and name must match the declaration in the class body. If the member was declared as a ```const``` member function, then the definition must also specify ```const``` after the parameter list.
+
+Ex.
+
+```cpp
+double Sales_data::avg_price() const {
+if (units_sold)
+	return revenue/units_sold;
+else
+	return 0;
+}
+```
+
+
+##
