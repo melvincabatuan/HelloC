@@ -20,11 +20,11 @@ The fundamental ideas behind classes are *data abstraction* and *encapsulation*.
 - A class that uses data abstraction and encapsulation defines an abstract data type. In an abstract data type, the class designer worries about how the class is implemented. Programmers who use the class need not know how the type works. They can instead think abstractly about what the type does.
 
 
-## Class Designer and User programmer roles
+## Class 'Designer' and 'User' programmer roles
 
 - Programmers tend to think about the people who will run their applications as users. Similarly a class designer designs and implements a class for users of that class. In this case, the user is a programmer, not the ultimate user of the application.
 
 
-### Functions defined in the class are implicitly ```inline```
+### "Functions defined in the class are implicitly ```inline```"
 
-### Objects that are ```const```, and references or pointers to ```const``` objects, may call only ```const``` member functions.
+### "Objects that are ```const```, and references or pointers to ```const``` objects, may call only ```const``` member functions."
