@@ -12,18 +12,17 @@ void add2matrices(int matA[MAX_ROWS][MAX_COLS], int matB[MAX_ROWS][MAX_COLS], in
 }
 
 
-void mult2matrices(int matA[MAX_ROWS][MAX_COLS], int matB[MAX_ROWS][MAX_COLS], int result[MAX_ROWS][MAX_COLS], int A_rows, int B_cols){
-	int temp;
+void mult2matrices(int matA[MAX_ROWS][MAX_COLS], int matB[MAX_ROWS][MAX_COLS], int result[MAX_ROWS][MAX_COLS], int A_rows, int B_cols, int k_max){
 	for (int i = 0; i < A_rows; ++i){
-		for (int j = 0; j <B_cols; ++j){
-			temp = 0;
-			for(int k = 0; k < A_rows; ++k){
-				 temp = temp + matA[i][k] * matB[k][j];
+		for (int j = 0; j < B_cols; ++j){
+			result[i][j] = 0;
+			for(int k = 0; k < k_max; ++k){
+				 result[i][j] += matA[i][k] * matB[k][j];
 			}
-			result[i][j] = temp;
 		}
 	}
 }
+
 
 
 
