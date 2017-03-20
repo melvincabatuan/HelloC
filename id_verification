@@ -1,0 +1,32 @@
+/* Written by Cobalt - 3/20/17 */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+int id_verify(int id_num) {
+	int sum = 0;
+	for (int i = 1; i <= 8; ++i) {
+		sum = sum + (id_num % 10) * i;
+		id_num = id_num / 10;
+	}
+	printf("The sum is %d.\n", sum);
+	if (sum % 11 == 0)
+		return 1; // T
+	else
+		return 0; // F
+ }
+
+
+int main()
+{
+	int id_num;
+	puts("Enter your ID number: ");
+	scanf("%d", &id_num);
+	if (id_verify(id_num))
+		puts("The ID number is valid!");
+	else
+		puts("Your ID number is fake!");
+	system("pause");
+	return 0;
+}
