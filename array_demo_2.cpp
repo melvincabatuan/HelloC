@@ -1,6 +1,4 @@
 #include <iostream>
-#include <iomanip>
- 
  
 using namespace std;
 
@@ -25,9 +23,6 @@ main(){
 	}
 	cout<< endl;
 	// Displays the elements of the array
-	
-	cout<< setprecision(2) << fixed;  // setting two decimal places
-	
 	for(int row = 0; row < rows; row++){
 		for(int col = 0; col < cols; col++){
 			cout << myArray[row][col] << " ";
