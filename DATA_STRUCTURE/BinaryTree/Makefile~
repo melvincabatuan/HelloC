@@ -1,3 +1,0 @@
-CC=gcc
-BinarySearchTree: BinarySearchTree.c
-  $(CC) -Wall -o BinarySearchTree BinarySearchTree.c
