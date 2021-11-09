@@ -7,7 +7,7 @@ int main( )
 {
     char line[81];
     printf("Enter a string.\n");
-    gets(line);
+    fgets(line, 81, stdin);
     vowels(line);
     system("pause");
 }
