@@ -19,3 +19,7 @@ $ g++ filename.cpp -o filename
 
 
 ### Lab 2
+
+| Q  | A |
+| ------------- | ------------- |
+| May follow up question lang po for Lab 2 as well. In the test po kasi sa github ito po yung lumabas na error. But the error it’s saying is from a code po that we are not supposed to touch. What do I do po?  | Hi xxxx, Good day! I already checked your output. The problem in the testing was that the  file was not written. I modified the path, then it worked. Good job!  |
