@@ -2,10 +2,21 @@
 
 int main()
 {
-  for (char chr = 'a'; chr <= 'z'; chr = chr + 1)
+
+
+  for (char chr = 'A'; chr <= 'Z'; chr++)
   {
     printf("%c ", chr);
   }
+
+
+
+
+
+
+
+
+
   // for (chr = 'A'; chr <= 'Z'; chr = chr + 1) {
   //   printf("%c ", chr);
   // }
