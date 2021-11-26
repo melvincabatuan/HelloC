@@ -11,6 +11,12 @@ $ g++ filename.cpp -o filename
 
 ## Q-and-A's
 
+### General
+| Q  | A |
+| ------------- | ------------- |
+| fatal error: conio.h: No such file or directory | Do not use conio since this is associated with the old MS-DOS Windows system, thus not portable.|
+
+
 ### Lab 1
 
 | Q  | A |
