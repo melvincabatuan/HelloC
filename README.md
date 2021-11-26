@@ -38,8 +38,4 @@ $ g++ filename.cpp -o filename
 
 | Q | A|
 | ------------- | ------------- |
-|  Sir, if I may ask, is it possible that you check the github checker for Lab 3 Machine Problem? My code works in DEV-C, but fails to do so in Github for some reason. It always results in a very weird sum. It also says that 3 out of 4 checks are correct—and that only the sum part is messing up. E.g.
- 71 95 69 69 66 3 72 16 98 <br>
- 0 0 0 0 0 0 0 1 0 <br>
-EXPECTED SUM = 16 <br>
-ACTUAL SUM = -1618659656 <br> | This is caused by garbage value from the sum variable, thus, when you compute the sum, make sure to set it to zero first outside the loop. e.g. *sum = 0; |
+|  Sir, if I may ask, is it possible that you check the github checker for Lab 3 Machine Problem? My code works in DEV-C, but fails to do so in Github for some reason. It always results in a very weird sum. It also says that 3 out of 4 checks are correct—and that only the sum part is messing up. E.g. 71 95 69 69 66 3 72 16 98 <br> 0 0 0 0 0 0 0 1 0 <br> EXPECTED SUM = 16 <br> ACTUAL SUM = -1618659656 <br> | This is caused by garbage value from the sum variable, thus, when you compute the sum, make sure to set it to zero first outside the loop. e.g. *sum = 0; |
