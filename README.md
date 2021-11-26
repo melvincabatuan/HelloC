@@ -15,6 +15,7 @@ $ g++ filename.cpp -o filename
 | Q  | A |
 | ------------- | ------------- |
 | fatal error: conio.h: No such file or directory | Do not use conio since this is associated with the old MS-DOS Windows system, thus not portable.|
+| Can we create new header files? | No. This is unnecessary and will mess up the build. |
 
 
 
