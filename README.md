@@ -16,7 +16,7 @@ $ g++ filename.cpp -o filename
 | ------------- | ------------- |
 | fatal error: conio.h: No such file or directory | Do not use conio since this is associated with the old MS-DOS Windows system, thus not portable.|
 | Can we create new header files? | No. This is unnecessary and will mess up the build. |
-
+| Can I add main in my implementation file? | No. There can only be one main() function and it has been provided in a separate file. If your using your own main() function in the implementation, make sure to **comment** it out when submitting the final solution since this will interfer with the build. |
 
 
 ### Lab 1
