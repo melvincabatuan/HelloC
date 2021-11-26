@@ -33,3 +33,13 @@ $ g++ filename.cpp -o filename
 |  I just wanted to clarify because I noticed that in the example in the repository, the number of letters was 639 which I think because it included the 2 numbers (100 and 100). So should we include the numbers in this count po even it just says letters? | Yes, please include the digits as well. |
 |Build Error:  if (input[i] == NULL) {... | Note that the null character is '\0' not NULL which we usually use for pointers  |
 | undefined reference to `box_shift(char*, char const*)' | This happens when you change the function prototype, thus maintain the starter code with regards to the heading of the function, e.g. void box_shift(char *input, const char *filename) |
+
+### Lab 3
+
+| Q | A|
+| ------------- | ------------- |
+|  Sir, if I may ask, is it possible that you check the github checker for Lab 3 Machine Problem? My code works in DEV-C, but fails to do so in Github for some reason. It always results in a very weird sum. It also says that 3 out of 4 checks are correct—and that only the sum part is messing up. E.g.
+ 71 95 69 69 66 3 72 16 98 <br>
+ 0 0 0 0 0 0 0 1 0 <br>
+EXPECTED SUM = 16 <br>
+ACTUAL SUM = -1618659656 <br> | This is caused by garbage value from the sum variable, thus, when you compute the sum, make sure to set it to zero first outside the loop. e.g. *sum = 0; |
