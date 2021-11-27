@@ -43,6 +43,7 @@ $ g++ filename.cpp -o filename
 |Build Error:  if (input[i] == NULL) {... | Note that the null character is '\0' not NULL which we usually use for pointers  |
 | undefined reference to `box_shift(char*, char const*)' | This happens when you change the function prototype, thus maintain the starter code with regards to the heading of the function, e.g. void box_shift(char *input, const char *filename) |
 | error: no match for ‘operator>=’ (operand types are ‘FILE’ {aka ‘_IO_FILE’} and ‘char’) 26      if ((stdin[i] >= 'a' .... | You cannot use stdin here, use the variable text instead. |
+| Can I change the function prototype? E.g. float get_readability(const char *text) into float get_readability(int l, int w, int s) | NO. Do not modify function prototypes. This will mess up the testing. |  
 
 ### Lab 3
 
