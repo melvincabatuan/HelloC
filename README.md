@@ -44,6 +44,8 @@ $ g++ filename.cpp -o filename
 | undefined reference to `box_shift(char*, char const*)' | This happens when you change the function prototype, thus maintain the starter code with regards to the heading of the function, e.g. void box_shift(char *input, const char *filename) |
 | error: no match for ‘operator>=’ (operand types are ‘FILE’ {aka ‘_IO_FILE’} and ‘char’) 26      if ((stdin[i] >= 'a' .... | You cannot use stdin here, use the variable text instead. |
 | Can I change the function prototype? E.g. float get_readability(const char *text) into float get_readability(int l, int w, int s) | NO. Do not modify function prototypes. This will mess up the testing. |  
+| For the module 2, can you please give me advises on how to solve the "3 - lab2_ex2.test_alpanumeric_count (Failed) and 6 - lab2_ex2.test_compute_readability (Failed)" po. I don't quite understand on why is it a failed when it works naman. | The testing involves numeric characters as well, e.g. char text[] = "The1 quick2 brown3 fox4 jumps5 over6 a7 lazy8 dog9 10."; ASSERT_EQ(44, alpanumeric_count(text)); The count here is 44. |
+  
 
 ### Lab 3
 
