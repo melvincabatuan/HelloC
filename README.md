@@ -11,6 +11,14 @@ $ g++ filename.cpp -o filename
 
 ## Q-and-A's
 
+### General
+| Q  | A |
+| ------------- | ------------- |
+| fatal error: conio.h: No such file or directory | Do not use conio since this is associated with the old MS-DOS Windows system, thus not portable.|
+| Can we create new header files? | No. This is unnecessary and will mess up the build. |
+| Can I add main in my implementation file? | No. There can only be one main() function and it has been provided in a separate file. If you're using your own main() function in the implementation, make sure to **comment** it out when submitting the final solution since this will interfer with the build. |
+
+
 ### Lab 1
 
 | Q  | A |
@@ -29,5 +37,18 @@ $ g++ filename.cpp -o filename
 |If I want to see the original lab2_ex1.cpp code (with the //ENTER CODE HERE!!//) what do I press po? Na-copy paste ko na po kasi yung gawa ko and its still wrong, but I wanted to backtrack on what happened.| You can revert to the previous commit. Instructions here: https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-commits/reverting-a-commit |
 |my lab act 2 ex 2 I think is already good since it did not show up in the error. however, my ex1 seems to not be going well. as far as the code is concerned, I'm 80% sure that its good to go since testing it on dev c++ yields the correct pattern as well as output into a txt file. I'm having a hard time diagnosing the problem through reading the test logs so I wanted to ask for help and advice.| Hi xxxx, Good day! Your output doesn't satisfy the expected output yet: your output <br>input: de la salle <br>ede la sall <br>lede la sal <br>llede la sa <br> allede la s <br>sallede la <br>sallede la <br>a sallede l <br>la sallede <br>la sallede <br>e la salled <br>Expected:  <br>de la salle  <br>ede la sall  <br>lede la sal  <br>llede la sa  <br>allede la s  <br>sallede la  <br>sallede la  <br>a sallede l  <br>la sallede  <br>la sallede  <br>e la salled  <br>| 
 | Can we replace fgets with scanf("%[^\n]s",&input); in the ex1_main?  | NO! Using scanf for %s is not a good practice, thus don't do this. |
+| The output looks weird with fgets() | fgets() includes your <ENTER> key input or '\n' character at the end of the string, thus, you must replace this with '\0'. E.g. input[strlen(input)-1] = '\0'; |
 | I just finished my codes for module 2 and they seem to be working fine, however, github still marks it as wrong. I would like to ask for help lang po about this if you have the time. Thank you sir. | The build details states undefined reference to `alpanumeric_count(char const*)'. Thus, checking your, lab2/ex2/lab2_ex2.cpp it seems that you renamed the function into int alpha_count(), this is not allowed. |
 |  I just wanted to clarify because I noticed that in the example in the repository, the number of letters was 639 which I think because it included the 2 numbers (100 and 100). So should we include the numbers in this count po even it just says letters? | Yes, please include the digits as well. |
+|Build Error:  if (input[i] == NULL) {... | Note that the null character is '\0' not NULL which we usually use for pointers  |
+| undefined reference to `box_shift(char*, char const*)' | This happens when you change the function prototype, thus maintain the starter code with regards to the heading of the function, e.g. void box_shift(char *input, const char *filename) |
+| error: no match for ‘operator>=’ (operand types are ‘FILE’ {aka ‘_IO_FILE’} and ‘char’) 26      if ((stdin[i] >= 'a' .... | You cannot use stdin here, use the variable text instead. |
+| Can I change the function prototype? E.g. float get_readability(const char *text) into float get_readability(int l, int w, int s) | NO. Do not modify function prototypes. This will mess up the testing. |  
+| For the module 2, can you please give me advises on how to solve the "3 - lab2_ex2.test_alpanumeric_count (Failed) and 6 - lab2_ex2.test_compute_readability (Failed)" po. I don't quite understand on why is it a failed when it works naman. | The testing involves numeric characters as well, e.g. char text[] = "The1 quick2 brown3 fox4 jumps5 over6 a7 lazy8 dog9 10."; ASSERT_EQ(44, alpanumeric_count(text)); The count here is 44. |
+  
+
+### Lab 3
+
+| Q | A|
+| ------------- | ------------- |
+|  Sir, if I may ask, is it possible that you check the github checker for Lab 3 Machine Problem? My code works in DEV-C, but fails to do so in Github for some reason. It always results in a very weird sum. It also says that 3 out of 4 checks are correct—and that only the sum part is messing up. E.g. 71 95 69 69 66 3 72 16 98 <br> 0 0 0 0 0 0 0 1 0 <br> EXPECTED SUM = 16 <br> ACTUAL SUM = -1618659656 <br> | This is caused by garbage value from the sum variable, thus, when you compute the sum, make sure to set it to zero first outside the loop. e.g. *sum = 0; |
