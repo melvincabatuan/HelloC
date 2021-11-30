@@ -6,17 +6,21 @@ int main()
 
 	// A. Writing in a file
 
-	// 1. Declare a file pointer
-	FILE *fp;
+	// // 1. Declare a file pointer
+	// FILE *fp;
 
-	// 2. Open the file : "w" write mode
-	fp = fopen(FILENAME, "w");
+	// // 2. Open the file : "w" write mode
+	// fp = fopen(FILENAME, "w");
 
-	// 3. Write a text to file
-	fprintf(fp, "%s", "Hello De La Salle University!");
+	// // 3. Write a text to file
+	// fprintf(fp, "%s", "Hello DLSU! ANIMO!!!");
 
-	// 4. Close the file
-	fclose(fp);
+	// // 4. Close the file
+	// fclose(fp);
+
+
+
+
     // =======================================================
 	// A. Reading in a file
 
