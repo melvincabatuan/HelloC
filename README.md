@@ -59,3 +59,4 @@ $ g++ filename.cpp -o filename
 |Q|A|
   | ------------- | ------------- |
 |Sir may question po ako sa createCourse(), if isa lang po yung gagawin course dun, para saan po yung num na parameter | The num parameter serves as course id, e.g course 1 name: Physics, here the 1 after the course is the value of the num parameter|
+|Sir question regarding the lab activity 4, do we include the course struct inside the student struct? kasi po walang ibang code na nag cacall dun sa create course na function, create student lang po.| Not in this case, consider them as independent structures, but Structure #2: Student includes the array of courses: Course courses[TOTAL_COURSE] |
