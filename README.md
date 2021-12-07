@@ -45,6 +45,7 @@ $ g++ filename.cpp -o filename
 | error: no match for ‘operator>=’ (operand types are ‘FILE’ {aka ‘_IO_FILE’} and ‘char’) 26      if ((stdin[i] >= 'a' .... | You cannot use stdin here, use the variable text instead. |
 | Can I change the function prototype? E.g. float get_readability(const char *text) into float get_readability(int l, int w, int s) | NO. Do not modify function prototypes. This will mess up the testing. |  
 | For the module 2, can you please give me advises on how to solve the "3 - lab2_ex2.test_alpanumeric_count (Failed) and 6 - lab2_ex2.test_compute_readability (Failed)" po. I don't quite understand on why is it a failed when it works naman. | The testing involves numeric characters as well, e.g. char text[] = "The1 quick2 brown3 fox4 jumps5 over6 a7 lazy8 dog9 10."; ASSERT_EQ(44, alpanumeric_count(text)); The count here is 44. |
+  | I have another question po regarding module 2 exercise 2. I am having trouble computing for "S" in the Coleman–Liau Index Formula. It keeps showing as a value of 0. I tried displaying the values for sentence, word, alphanumeric count and its ok naman po. | You need to cast it into float, e.g. float L=((alpanumeric_count(text)/(float)word_count(text))*100); Note: integer / integer would be zero if less than 1 |
   
 
 ### Lab 3
