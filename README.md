@@ -69,4 +69,4 @@ $ g++ filename.cpp -o filename
   
 |Q|A|
   | ------------- | ------------- |
-  | Comparing strings with == error: Comparison against a string literal is unspecified. | The comparison "==" is only valid for primitive types like int, char, etc., not for arrays (in C/C++). Thus, if you need to compare strings in C which are character arrays, one must use strcmp() function or loop and perform individual character comparison. I'm glad you figured this out in your final solution. |
+  | Comparing strings with == error: Comparison against a string literal is unspecified. | The comparison "==" is only valid for primitive types like int, char, etc., not for arrays (in C). Thus, if you need to compare strings in C which are character arrays, one must use strcmp() function or loop and perform individual character comparison. I'm glad you figured this out in your final solution. |
