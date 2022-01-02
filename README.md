@@ -64,3 +64,9 @@ $ g++ filename.cpp -o filename
 |sir I am confused what to do with the float computeGPA(Course courses[TOTAL_COURSE])| Here you compute the GPA, thus extract the GRADES together with their corresponding units. Then apply the GPA formula.|
  | I would like to ask a question regarding the lab activity about structures. My code seems to be working fine if I run it on DevC. However, when I run it on GitHub, the value of the string student.degree has an extra .00000 at the end of it. Could you check my code po? | Do not use gets() that's removed in the standard due to this issue and security vulnerabilities, use fgets instead. fgets() is a safer alternative of gets(). fgets() reads at most count - 1 characters from the given file stream and stores them in the character array pointed to by str. gets() on the other hand, doesn't constrain the amount of data it reads, and is thus vulnerable to extra garbage characters like what you encountered, buffer overruns, and attacks. |
 | I have a concern regarding the Course function in the header file, whenever I try to run it in dev c it always says that there is an error but I followed what you have said in the previous recording to type Course courses(TOTAL_COURSE) but I can't seem to find what's wrong with it. | You should declare the courses using brackets, e.g. Course courses[TOTAL_COURSE]. This is how we declare an array.  |
+  
+   ### Lab 4 - homework (Machine Problem)
+  
+|Q|A|
+  | ------------- | ------------- |
+  | Comparing strings with == error: Comparison against a string literal is unspecified. | The comparison "==" is only valid for primitive types like int, char, etc., not for arrays (in C/C++). Thus, if you need to compare strings in C which are character arrays, one must use strcmp() function or loop and perform individual character comparison. I'm glad you figured this out in your final solution. |
