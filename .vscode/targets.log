@@ -1,6 +1,6 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make.exe: *** No rule to make target 'all'.  Stop.
- 
+
 # GNU Make 4.2.1
 # Built for x86_64-w64-mingw32
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +8,7 @@ make.exe: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Dec 14 14:55:42 2021
+# Make data base, printed on Wed Apr 13 08:45:19 2022
 
 # Variables
 
@@ -69,13 +69,13 @@ VS100COMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Too
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-182e59bd-d5a1-40ca-a5d1-0c79800ef675-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ee70ad86-fa7f-4779-ae40-5c5877731320-sock
 # environment
 VSCODE_CWD = C:\Users\ECE\AppData\Local\Programs\Microsoft VS Code
 # default
 MAKE_HOST := x86_64-w64-mingw32
 # environment
-PATH = C:\Python310\Scripts\;C:\Python310\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Common Files\Datawatch\Drivers\;C:\Program Files\Common Files\Datawatch\jre\bin;C:\Program Files\Common Files\Datawatch\jre\bin\server;C:\Users\ECE\Documents\ffmpeg-20170915-6743351-win64-static\bin;C:\Users\ECE\AppData\Local\Android\sdk\platform-tools;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\phantomjs-2.1.1-windows\bin;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\gs\gs9.52\bin;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.1\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-14.0.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Common Files\Datawatch\Drivers\;C:\Program Files\Common Files\Datawatch\jre\bin;C:\Program Files\Common Files\Datawatch\jre\bin\server;C:\Users\ECE\Documents\ffmpeg-20170915-6743351-win64-static\bin;C:\Program Files (x86)\Graphviz2.38\bin;C:\Users\ECE\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Program Files\Graphviz\bin;C:\Users\ECE\anaconda3\Library\bin;C:\Users\ECE\anaconda3\Scripts;C:\Users\ECE\anaconda3;C:\Users\ECE\AppData\Local\Microsoft\WindowsApps;C:\Program Files\gs\gs9.54.0\bin;C:\Users\ECE\AppData\Roaming\npm;C:\Users\ECE\AppData\Local\Pandoc\;C:\Users\ECE\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64;C:\GnuWin\bin;
+PATH = C:\Python310\Scripts\;C:\Python310\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Common Files\Datawatch\Drivers\;C:\Program Files\Common Files\Datawatch\jre\bin;C:\Program Files\Common Files\Datawatch\jre\bin\server;C:\Users\ECE\Documents\ffmpeg-20170915-6743351-win64-static\bin;C:\Users\ECE\AppData\Local\Android\sdk\platform-tools;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\phantomjs-2.1.1-windows\bin;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\gs\gs9.52\bin;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.1\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-14.0.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Common Files\Datawatch\Drivers\;C:\Program Files\Common Files\Datawatch\jre\bin;C:\Program Files\Common Files\Datawatch\jre\bin\server;C:\Users\ECE\Documents\ffmpeg-20170915-6743351-win64-static\bin;C:\Program Files (x86)\Graphviz2.38\bin;C:\Users\ECE\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Program Files\Graphviz\bin;C:\Users\ECE\anaconda3\Library\bin;C:\Users\ECE\anaconda3\Scripts;C:\Users\ECE\anaconda3;C:\Users\ECE\AppData\Local\Microsoft\WindowsApps;C:\Program Files\gs\gs9.54.0\bin;C:\Users\ECE\AppData\Roaming\npm;C:\Users\ECE\AppData\Local\Pandoc\;C:\Users\ECE\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64;C:\mingw64\bin;
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
@@ -105,7 +105,7 @@ JDK_HOME = C:\Program Files\Java\jdk-14.0.1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6368_FQNCFZOGMNHMQFUG
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8296_AHEGEWFXQONLXQIU
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -129,11 +129,11 @@ USERNAME = ECE
 # environment
 KMP_DUPLICATE_LIB_OK = TRUE
 # environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\ECE\AppData\Roaming\Code\CachedData\7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e
+VSCODE_CODE_CACHE_PATH = C:\Users\ECE\AppData\Roaming\Code\CachedData\8dfae7a5cd50421d10cd99cb873990460525a898
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 COMMONPROGRAMFILES = C:\Program Files\Common Files
 # environment
@@ -183,7 +183,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
 # environment
 OS = Windows_NT
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\9a1b07db58ed31f0742ffce91108035d-1.63.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\9a1b07db58ed31f0742ffce91108035d-1.66.1-main-sock
 # environment
 TEMP = C:\Users\ECE\AppData\Local\Temp
 # environment
@@ -243,7 +243,7 @@ PROCESSOR_LEVEL = 6
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 6368
+VSCODE_PID = 8296
 # environment
 MSMPI_LIB64 = C:\Program Files (x86)\Microsoft SDKs\MPI\Lib\x64\
 # environment
@@ -257,7 +257,7 @@ USERDOMAIN_ROAMINGPROFILE = MAHARLIKA
 
 # Directories
 
-# . (key d:/workspace/HelloC, mtime 1638864795): 28 files, no impossibilities.
+# . (key d:/workspace/HelloC, mtime 1639466075): 28 files, no impossibilities.
 
 # 28 files, no impossibilities in 1 directories.
 
@@ -322,6 +322,6 @@ GNUmakefile:
 # strcache performance: lookups = 37 / hit rate = 5%
 # hash-table stats:
 # Load=35/8192=0%, Rehash=0, Collisions=1/37=3%
-# Finished Make data base on Tue Dec 14 14:55:42 2021
+# Finished Make data base on Wed Apr 13 08:45:19 2022
 
  
