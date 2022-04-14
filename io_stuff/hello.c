@@ -7,6 +7,9 @@ Last modified:
 
 #include <stdio.h> // Pre-processor directive to add the header file
 
+// You may set global variable here
+// e.g. int age;
+
 int main()
 {
     printf("Hello World!"); // output hello text
