@@ -15,7 +15,7 @@ $ g++ filename.cpp -o filename
 | Q  | A |
 | ------------- | ------------- |
 | fatal error: conio.h: No such file or directory | Do not use conio since this is associated with the old MS-DOS Windows system, thus not portable.|
-| ERROR: Undefinded reference to 'WinMain'...ld returned 1 esit status...  | Make sure to save the file before run: CTRL + S |
+| ERROR: Undefinded reference to 'WinMain'...ld returned 1 exit status...  | Make sure to save the file before run: CTRL + S |
 
 
 
