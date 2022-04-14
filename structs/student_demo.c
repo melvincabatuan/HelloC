@@ -24,6 +24,7 @@ int main()
     printf("The id of my student is %d\n.", frosh.id);
     printf("The age of my student is %d\n.", frosh.age);
     printf("The gpa of my student is %0.2f\n.", frosh.gpa);
+    
 
     return 0;
 }
