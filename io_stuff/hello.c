@@ -1,6 +1,6 @@
 /* Note: This is a block comment
 This program is just a customary greeting: "Hello World!"
-Written by:
+Written by: MKC
 Date written:
 Last modified:
 */
@@ -10,8 +10,8 @@ Last modified:
 // You may set global variable here
 // e.g. int age;
 
-int main()
+int main() // main() function is the entry point of program run
 {
     printf("Hello World!"); // output hello text
-    return 0;
+    return 0;               // int return type set above int main()
 }
