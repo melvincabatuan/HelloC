@@ -1,18 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(int argc, char *argv[], char *env[])
 {
     printf("Number of arguments to the main functions: %d\n", argc);
     int i = 0;
-    while(env[i]){
+    while (env[i])
+    {
         printf("env[%d] = %s\n", i, env[i]);
         i++;
-     } 
+    }
     return 0;
 }
 
 /*
-$ ./MainArgumentsEnvironment 
+$ ./MainArgumentsEnvironment
 Number of arguments to the main functions: 1
 env[0] = NDK=/home/cobalt/Android/adt-bundle-linux-x86-20131030/android-ndk-r10b
 env[1] = SSH_AGENT_PID=3614

@@ -1,12 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(int argc, char *argv[])
 {
     printf("Number of arguments to the main functions: %d\n", argc);
     int i = 0;
-    for(i = 0; i < argc; i++){
+    for (i = 0; i < argc; i++)
+    {
         printf("Argument number %d is %s\n", i, argv[i]);
-     } 
+    }
     return 0;
 }
 
