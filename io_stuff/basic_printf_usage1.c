@@ -13,7 +13,6 @@ int main()
     printf("Juan de la Cruz\n");
     printf("2401 Taft Avenue\n"); //  Taft Ave, Malate, Manila, 1004 Metro Manila
     printf("Malate, Manila, \n0922 Philippines\n");
-
     // system("pause"); // Needed when opened in cmd window
     return 0;
 }

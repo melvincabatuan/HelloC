@@ -1,4 +1,9 @@
-/* using sacnf() */
+/*
+This program demonstrates scanf usage.
+Written by: MKC
+Date written:
+Last modified:
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

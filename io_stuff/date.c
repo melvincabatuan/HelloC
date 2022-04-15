@@ -1,4 +1,9 @@
-/* Exercise 3.2 Display a date */
+/*
+This program displays a date.
+Written by:
+Date written:
+Last modified:
+*/
 #include <stdio.h>
 
 int main(void)

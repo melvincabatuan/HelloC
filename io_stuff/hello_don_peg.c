@@ -1,6 +1,4 @@
 /*
-$ gcc HelloDon.c -o HelloDon
-$ ./HelloDon
 Hello Don, Hello peg!
 */
 

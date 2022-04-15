@@ -1,6 +1,4 @@
 /*
-$ gcc FormatSpecifiers.c -o FormatSpecifiers
-PhD:~/HelloC$ ./FormatSpecifiers
 The following are all the format specifiers that can be used in printf():
 %c The character format specifier.
 %d The integer format specifier.
@@ -23,7 +21,7 @@ The following are all the format specifiers that can be used in printf():
 #include <stdlib.h>
 #include <stdio.h>
 
-void main()
+int main()
 {
     printf("The following are all the format specifiers that can be used in printf():\n");
     printf("%%c The character format specifier.\n");
