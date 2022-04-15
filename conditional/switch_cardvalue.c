@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
-	
-	char input[3];    
+int main()
+{
+
+	char input[3];
 	int value = 0;
-	
+
 	printf(">> ");
 	scanf("%2s", input);
-	
-	switch (input[0]){
+
+	switch (input[0])
+	{
 
 	case 'J':
 	case 'Q':
@@ -23,16 +25,17 @@ int main(){
 	case 'A':
 		value = 11;
 		break;
-		
- 	default:
+
+	default:
 		value = atoi(input);
-		if (value > 10 || value < 2){
+		if (value > 10 || value < 2)
+		{
 			puts("INVALID Output!!!");
 			return 0;
 		}
-	}	
-	 
+	}
+
 	printf("Value of card = %d", value);
-	
+
 	return 0;
 }

@@ -1,33 +1,35 @@
-/* 
-$ gcc HelloDon.c -o HelloDon 
-$ ./HelloDon 
+/*
+$ gcc HelloDon.c -o HelloDon
+$ ./HelloDon
 Hello Don, Hello peg!
 */
 
 #include <stdlib.h>
 #include <stdio.h>
 
- void main()
- {
- int day;
- 
- printf("Please enter a single digit for a day\n");
- printf("(within the range of 1 to 3):\n");
+void main()
+{
+    int day;
 
- day = getchar();
+    printf("Please enter a single digit for a day\n");
+    printf("(within the range of 1 to 3):\n");
 
- switch (day){
- case '1':
-     printf("Day 1\n");
-     break;
- case '2':
-     printf("Day 2\n");
-     break;
- case '3':
-    printf("Day 3\n");
-    break;
- default:
-    printf("Invalid Day! \n");;
-  }
- exit(0);
+    day = getchar();
+
+    switch (day)
+    {
+    case '1':
+        printf("Day 1\n");
+        break;
+    case '2':
+        printf("Day 2\n");
+        break;
+    case '3':
+        printf("Day 3\n");
+        break;
+    default:
+        printf("Invalid Day! \n");
+        ;
+    }
+    exit(0);
 }

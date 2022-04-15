@@ -1,36 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
-	
-	char input[3];    
+int main()
+{
+
+	char input[3];
 	int value = 0;
-	
+
 	printf(">> ");
 	scanf("%2s", input);
-	
-	if (input[0] == 'J'){
+
+	if (input[0] == 'J')
+	{
 		value = 10;
 	}
-	else if (input[0] == 'Q'){
+	else if (input[0] == 'Q')
+	{
 		value = 10;
 	}
-	else if (input[0] == 'K'){
+	else if (input[0] == 'K')
+	{
 		value = 10;
 	}
-	else if (input[0] == 'A'){
+	else if (input[0] == 'A')
+	{
 		value = 11;
 	}
-	else {
+	else
+	{
 		value = atoi(input);
-		if (value > 10 || value < 2){
+		if (value > 10 || value < 2)
+		{
 			puts("INVALID Output!!!");
 			return 0;
 		}
-	}	
-	
-	 
+	}
+
 	printf("Value of card = %d", value);
-	
+
 	return 0;
 }
