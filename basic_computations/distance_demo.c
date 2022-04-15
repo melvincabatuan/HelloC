@@ -1,8 +1,8 @@
 /** Structure to organize your data
- * 
+ *
  * Structure is a way for you to organize your data.
  * We oftentimes try to do it on our everday activities even knowing it.
- * To give an example let's create a program that 
+ * To give an example let's create a program that
  * stores a point and calculate the distance between two points
  *
  * in this example, although it works, we show it's kinda clunky to do this in our current mindset.
@@ -19,7 +19,7 @@ double calculateDistance(double X1, double Y1, double X2, double Y2)
 
 int main(void)
 {
-    //Typical way to do it.
+    // Typical way to do it.
     double point1_X, point1_Y;
     double point2_X, point2_Y;
 

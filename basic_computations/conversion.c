@@ -1,6 +1,6 @@
 /* Exercise 1 Convert temperatures */
 #include <stdio.h>
-#include<stdlib.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -12,13 +12,13 @@ int main()
          "Select the conversion (1 or 2): ");
   scanf("%d", &choice);
 
-  printf("Enter a temperature in degrees %s: ",(choice == 1 ?  "Centigrade" : "Fahrenheit"));
+  printf("Enter a temperature in degrees %s: ", (choice == 1 ? "Centigrade" : "Fahrenheit"));
   scanf("%lf", &temperature);
 
-  if(choice == 1)
-    printf("That is equivalent to %.2lf degrees Fahrenheit\n", temperature*9.0/5.0+32.0);
+  if (choice == 1)
+    printf("That is equivalent to %.2lf degrees Fahrenheit\n", temperature * 9.0 / 5.0 + 32.0);
   else
-    printf("That is equivalent to %.2lf degrees Centigrade\n", (temperature-32.0)*5.0/9.0);
-  //system("pause");
+    printf("That is equivalent to %.2lf degrees Centigrade\n", (temperature - 32.0) * 5.0 / 9.0);
+  // system("pause");
   return main();
 }
