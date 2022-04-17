@@ -1,5 +1,8 @@
 *.exe
 *.o
 */*.exe
+*/*/*.exe
 */*.o
 flowcharts/*.png
+lbyec2a/*/*.exe
+lbyec2b/*/*.exe
