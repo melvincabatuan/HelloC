@@ -1,11 +1,16 @@
 #include <stdio.h>
 
-// Create a void function
-void greet(){
-    printf("Hello, World!");
+void greet(); // Function Prototype
+
+int main()
+{ // main function
+    greet(); // 2. Function call
+    return 0;
 }
 
-int main(){ // main function
-    greet();
-    return 0;
+// Create a void function
+// 1. Function definition
+void greet()
+{
+    printf("Hello, World!");
 }
