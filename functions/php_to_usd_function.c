@@ -3,20 +3,20 @@
 // GLOBAL CONSTANTS: usual C practice
 #define X_PHPUSD 52.368361f
 
-float php2usd(float php);
+double php2usd(double php);
 
 int main()
 {
-    float my_pera;
+    double my_pera, my_money;
     my_pera = 1000000.0f;
-    php2usd(my_pera); // CALL
+    my_money = php2usd(my_pera);  // FUNCTION CALL                      // USD
+    printf("The converted value is %0.2lf", my_money); // CALL
     return 0;
 }
 
 // DEFINITION:
 // return_type function_name(INPUT_PARAMETERS)
-float php2usd(float php)
+double php2usd(double php)
 {
-    float usd = php / X_PHPUSD;
-    printf("%0.2f PHP = %0.2f USD\n", php, usd);
+    return (php / X_PHPUSD);
 }
