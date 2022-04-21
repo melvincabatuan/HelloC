@@ -1,6 +1,12 @@
+/*/*
+This program demonstrate creating a void function.
+Written by: MKC
+Date written:
+Last modified:
+*/
 #include <stdio.h>
 
-// fUNCTION PROTOTYPE
+// FUNCTION PROTOTYPE
 void greet(); // delare the existence of the function
 
 int main()
