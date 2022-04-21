@@ -1,4 +1,5 @@
 /*
+ This program explores the preprocessor decisions
 $ gcc IfDefineDemo2.c -o IfDefineDemo2
 $ ./IfDefineDemo2
 I know both BASIC and C languages.

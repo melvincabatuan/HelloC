@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int f(int n) {
+int f(int n)
+{
 	if (n == 0)
 		return 3;
 	else

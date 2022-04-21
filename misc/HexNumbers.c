@@ -1,6 +1,6 @@
-/* 
+/*
 $ gcc HexNumbers.c -o HexNumbers
-PhD:~/HelloC$ ./HexNumbers 
+PhD:~/HelloC$ ./HexNumbers
 Hex(UC) Hex(LC) Decimal
 0  	 0 	   0
 1  	 1 	   1
@@ -28,11 +28,10 @@ F  	 f 	   15
 #include <stdlib.h>
 #include <stdio.h>
 
- void main()
- {
- int i;
- printf ("Hex(UC) Hex(LC) Decimal\n");
- for (i = 0; i < 21; i++) 
-   printf("%X  \t %x \t   %d\n", i, i, i);
- exit(0);
- }
+void main()
+{
+  printf("Hex(UC) Hex(LC) Decimal\n");
+  for (int i = 0; i < 21; i++)
+    printf("%X  \t %x \t   %d\n", i, i, i);
+  exit(0);
+}

@@ -2,19 +2,17 @@
 
 #include <stdio.h>
 
-int Fibonacci(int n){
-   if (n == 0 || n ==1)
+int fibonacci(int n)
+{
+   if (n == 0 || n == 1)
       return n;
-   else 
-      return (Fibonacci(n-1) + Fibonacci(n-2)); 
+   else
+      return (fibonacci(n - 1) + fibonacci(n - 2));
 }
 
-int main(){
-    
-   int i = 0;
-   for(i = 0; i <= 40; i++){
-       printf("Fibonacci(%d) = %d\n", i, Fibonacci(i));
-    }
-
+int main()
+{
+   for (int i = 0; i <= 40; i++)
+      printf("Fibonacci(%d) = %d\n", i, fibonacci(i));
    return 0;
 }

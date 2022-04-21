@@ -1,4 +1,4 @@
-# Basic C/Cpp Coding 
+# Basic C Coding Examples
 
 This is a collection of Simple C programs for the purpose of basic programming introduction.
                                                                                          -mkc
