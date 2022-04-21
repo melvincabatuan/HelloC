@@ -9,9 +9,13 @@ Last modified:
 
 int main()
 {
+    // 1. Declare a variable
     int num;
+    // 2. Prompt the user for input
     printf("Enter a number: \n");
-    scanf("%d", &num);
+    // 3. Read the input and store to memory
+    scanf("%d", &num); // & - means "address of"
+    // 4. Display the input number
     printf("The number that you input is: %d\n", num);
     return 0;
 }
