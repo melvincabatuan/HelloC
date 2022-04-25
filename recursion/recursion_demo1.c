@@ -15,6 +15,6 @@ int main()
 	printf("f(2) = %d\n", f(2));
 	printf("f(3) = %d\n", f(3));
 	printf("f(4) = %d\n", f(4));
-	system("pause");
+	// system("pause");
 	return 0;
 }

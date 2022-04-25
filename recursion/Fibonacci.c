@@ -12,7 +12,7 @@ int fibonacci(int n)
 
 int main()
 {
-   for (int i = 0; i <= 40; i++)
+   for (int i = 0; i <= 10; i++)
       printf("Fibonacci(%d) = %d\n", i, fibonacci(i));
    return 0;
 }
