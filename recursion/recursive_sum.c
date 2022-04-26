@@ -14,8 +14,8 @@ due to the overhead of repeated function calls.
 #include <stdlib.h>
 #include <stdio.h>
 
-#define MIN_NUM 2
-#define MAX_NUM 5
+#define MIN_NUM 10
+#define MAX_NUM 12
 
 int recursive_sum(int minimum, int maximum)
 {
@@ -31,8 +31,8 @@ int main()
 
   for (int i = MIN_NUM; i <= MAX_NUM; i++)
     sum1 += i;
-  printf("The value of sum1 is %d.\n", sum1);
+  printf("The value of iterative sum is %d.\n", sum1);
   sum2 = recursive_sum(MIN_NUM, MAX_NUM);
-  printf("The value returned by fRecur() is %d.\n", sum2);
+  printf("The value returned by recursive sum is %d.\n", sum2);
   exit(0);
 }
