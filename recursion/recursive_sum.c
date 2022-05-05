@@ -14,8 +14,8 @@ due to the overhead of repeated function calls.
 #include <stdlib.h>
 #include <stdio.h>
 
-#define MIN_NUM 10
-#define MAX_NUM 12
+#define MIN_NUM 1
+#define MAX_NUM 10
 
 int recursive_sum(int minimum, int maximum)
 {
