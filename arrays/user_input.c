@@ -4,9 +4,10 @@ int main()
 {
     int scores[5];
     // Get user input:
+    // printf("Enter 5 integer values: ");
     for (int i = 0; i < 5; i++)
     {
-        printf("Enter 5 integer values: ");
+        printf("Enter score[%d] = ", i);
         scanf("%d", &scores[i]);
     }
     // Display
