@@ -3,7 +3,7 @@
 int main()
 {
     int scores[5];
-    // Get user input:    int i = 0;
+    // Get user input:
     for (int i = 0; i < 5; i++)
     {
         printf("Enter 5 integer values: ");
