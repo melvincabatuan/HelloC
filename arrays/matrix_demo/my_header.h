@@ -1,6 +1,6 @@
 #include <stdio.h>
-#define MAX_ROWS 3
-#define MAX_COLS 4
+#define MAX_ROWS 4 // students
+#define MAX_COLS 2 // roll no. & mark
 
 // This function displays an integer matrix
 void display_matrix(int matrix[MAX_ROWS][MAX_COLS])
