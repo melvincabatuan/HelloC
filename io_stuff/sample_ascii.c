@@ -1,8 +1,24 @@
 #include <stdio.h>
 
-int main()
+void ascii_menu()
 {
-    printf("Hello, World!\n");
+    printf(""
+           " ___ .-. .-.     .--.    ___ .-.    ___  ___  \n"
+           "(   )   '   \\   /    \\  (   )   \\  (   )(   ) \n"
+           " |  .-.  .-. ; |  .-. ;  |  .-. .   | |  | |\n"
+           " | |  | |  | | |  | | |  | |  | |   | |  | |\n"
+           " | |  | |  | | |  |/  |  | |  | |   | |  | |\n"
+           " | |  | |  | | |  ' _.'  | |  | |   | |  | |\n"
+           " | |  | |  | | |  .'.-.  | |  | |   | |  ; '\n"
+           " | |  | |  | | '  `-' /  | |  | |   ' `-'  /\n"
+           "(___)(___)(___) `.__.'  (___)(___)   '.__.' \n");
+}                                           
+                                              
+
+
+
+void ascii_mcjuan()
+{
     printf(""
            "                                                                                                                                     ''''''      \n"
            "M:::::::M             M:::::::M                                   J:::::::::J                                                    '::::'        \n "
@@ -20,6 +36,17 @@ int main()
            "M::::::M               M::::::M c:::::::::::::::::c      JJ:::::::::::::JJ  u:::::::::::::::ua:::::aaaa::::::a  n::::n    n::::n       s::::::::::::::s \n"
            "M::::::M               M::::::M  cc:::::::::::::::c        JJ:::::::::JJ     uu::::::::uu:::u a::::::::::aa:::a n::::n    n::::n        s:::::::::::ss\n"
            "MMMMMMMM               MMMMMMMM    cccccccccccccccc          JJJJJJJJJ         uuuuuuuu  uuuu  aaaaaaaaaa  aaaa nnnnnn    nnnnnn         sssssssssss    \n");
+}
 
+int main()
+{
+    printf("Hello, World!\n");
+    ascii_menu();
+    printf("\n\n\n MENU: \n");
+    printf("\t 1. SUB-MENU1: \n");
+    printf("\t 2. SUB-MENU2: \n");
+    printf("\t 3. SUB-MENU3: \n");
+    printf("\t EXIT: \n");
+    printf("\n\n\n etc. \n");
     return 0;
 }
